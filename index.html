@@ -3,204 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTB Manufacturing | Beauty & Personal Care Product Manufacturing in Australia</title>
-    <meta name="description" content="PTB Manufacturing is Australia's leading platform for developing, designing, and manufacturing beauty and personal care products. Our expert scientists craft cutting-edge formulations for your brand.">
-    <meta name="keywords" content="beauty manufacturing Australia, personal care product manufacturing, Australian beauty product design, skincare formulation Australia, cosmetics manufacturing Sydney, beauty product prototyping, personal care development Melbourne">
+    <title>PTB Manufacturing | Premium Beauty & Personal Care Manufacturing</title>
+    <meta name="description" content="PTB Manufacturing is Australia's leading partner for developing, designing, and manufacturing bespoke beauty and personal care products.">
+    <meta name="keywords" content="beauty manufacturing Australia, cosmetic chemist, skincare manufacturing, custom formulation, private label cosmetics australia, personal care manufacturing">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ptbmanufacturing.com/">
-    <!-- Open Graph for social sharing -->
     <meta property="og:title" content="PTB Manufacturing | Expert Beauty & Personal Care Manufacturing in Australia">
     <meta property="og:description" content="Develop and manufacture innovative beauty and personal care products with our Australian-based team of scientists and chemists.">
     <meta property="og:url" content="https://ptbmanufacturing.com/">
     <meta property="og:type" content="website">
-    <!-- Schema.org structured data for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "PTB Manufacturing",
       "url": "https://ptbmanufacturing.com/",
-      "logo": "https://ptbmanufacturing.com/logo.png",  // Replace with your logo URL
+      "logo": "https://ptbmanufacturing.com/logo.png",
       "description": "Australian manufacturer specializing in beauty and personal care products, offering formulation, prototyping, and production services.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "AU"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+61-123-456-789",  // Add real phone
-        "contactType": "customer service",
-        "areaServed": "AU",
-        "availableLanguage": "English"
-      }
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+61-YOUR-NUMBER", "contactType": "customer service" }
     }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Apple-like font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        body { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif; margin: 0; padding: 0; line-height: 1.5; color: #1A1A1A; background-color: #FFFFFF; overflow-x: hidden; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        section { animation: fadeIn 1s ease-out; }
-        header { background: #1A1A1A; color: #FFFFFF; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header h1 { font-size: 1.5em; margin: 0; }
-        .offer { background: #FFF5E1; padding: 60px 20px; text-align: left; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .offer-content { max-width: 60%; }
-        .offer h2 { font-size: 3em; font-weight: 700; margin: 0 0 10px; line-height: 1.1; }
-        .offer p { font-size: 1.2em; color: #666; margin: 0 0 20px; }
-        .offer .cta { background: #8B4513; color: #FFFFFF; padding: 15px 30px; font-size: 1.1em; border: none; border-radius: 30px; cursor: pointer; transition: background 0.3s; }
-        .offer .cta:hover { background: #A0522D; }
-        .testimonial { background: #FFFFFF; padding: 20px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 35%; position: relative; }
-        .testimonial img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
-        .testimonial .stars { color: #FFD700; margin-bottom: 10px; }
-        .testimonial cite { font-style: italic; color: #666; display: block; margin-top: 10px; }
-        .hero { 
-            background: 
-                url('https://media.istockphoto.com/id/1225197485/photo/closeup-of-test-tubes-with-orange-or-blue-liquid-dropping-glass-with-an-orange-drop-above.jpg?s=1024x1024&w=is&k=20&c=vEPbhuAQ1l0uBmrENzOr8WnHiDAk5JwKqa6FIJzOIoc=') left center / 33.33% no-repeat,
-                url('https://thumbs.dreamstime.com/b/futuristic-laboratory-blue-neon-lighting-advanced-equipment-illuminated-lights-equipped-state-art-technology-ideal-329124361.jpg') center center / 33.33% no-repeat,
-                url('https://images.stockcake.com/public/8/0/2/8029e7e0-1c46-4b3a-bdd7-34427e5e4481_large/scientist-using-microscope-stockcake.jpg') right center / 33.33% no-repeat;
-            background-color: #e0e0e0; /* Fallback for blending */
-            height: 80vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            color: #FFFFFF; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
-            position: relative;
+        /* === BASE & TYPOGRAPHY (Apple-inspired) === */
+        :root {
+            --background-color: #fbfbfd; /* Slightly off-white for warmth */
+            --text-primary: #1d1d1f;      /* Off-black for main text */
+            --text-secondary: #515154;    /* Gray for subtitles */
+            --accent-blue: #0071e3;        /* Apple's signature blue */
+            --light-gray: #f5f5f7;        /* Background for sections */
         }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); } /* Overlay for readability */
-        .hero h1 { font-size: 4em; font-weight: 700; margin: 0; z-index: 1; }
-        .hero p { font-size: 1.5em; max-width: 800px; z-index: 1; }
-        .hero .cta { z-index: 1; }
-        .cta { background: transparent; border: 2px solid #FFD700; color: #FFD700; padding: 15px 40px; font-size: 1.2em; cursor: pointer; border-radius: 50px; text-decoration: none; transition: background 0.3s, color 0.3s; }
-        .cta:hover { background: #FFD700; color: #1A1A1A; }
-        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 3em; font-weight: 700; text-align: center; margin-bottom: 40px; }
-        .steps, .solutions { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        .step, .solution { background: #F5F5F5; padding: 40px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s; }
-        .step:hover, .solution:hover { transform: translateY(-10px); }
-        .step img, .solution img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
-        .testimonials { background: #1A1A1A; color: #FFFFFF; }
-        .testimonial { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; margin-bottom: 30px; }
-        footer { background: #1A1A1A; color: #FFFFFF; text-align: center; padding: 40px; }
-        @media (max-width: 768px) { .offer { flex-direction: column; text-align: center; } .offer-content, .testimonial { max-width: 100%; margin-bottom: 20px; } .hero h1 { font-size: 2.5em; } section { padding: 40px 20px; } .hero { background-size: cover; background-position: center; } /* Fallback for mobile */ }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--background-color);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased; /* Smoother fonts */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.02em; /* Tighter letter-spacing for headlines */
+            margin: 0;
+        }
+
+        /* === LAYOUT & SECTIONS === */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            text-align: center;
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+            max-width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem); /* Responsive font size */
+            line-height: 1.1;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-top: 15px;
+        }
+
+        /* === HEADER === */
+        header {
+            background: rgba(251, 251, 253, 0.8); /* Translucent background */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 4.5rem);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* === CALL TO ACTION (CTA) BUTTONS === */
+        .cta {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: #fff;
+            padding: 14px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 999px; /* Pill shape */
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #0077ed;
+            transform: scale(1.05);
+        }
+        
+        /* === FEATURE IMAGE SECTION === */
+        .feature-image-section {
+            padding: 0; /* Remove padding for full-width image */
+        }
+        .feature-image {
+            width: 100%;
+            height: 85vh; /* Taller viewport height */
+            object-fit: cover; /* Cover the area without distortion */
+            border-radius: 30px; /* Gently rounded corners */
+            margin: 0 auto;
+            max-width: 1800px; /* Limit max width on very large screens */
+            display: block;
+        }
+
+        /* === PROCESS / GRID SECTION === */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .grid-item {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        .grid-item .icon {
+            font-size: 2.5em;
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+        }
+
+        .grid-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .grid-item p {
+            color: var(--text-secondary);
+        }
+
+        /* === TESTIMONIAL SECTION === */
+        .testimonials {
+            background-color: var(--light-gray);
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card p {
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        .testimonial-card cite {
+            display: block;
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        /* === CONTACT FORM === */
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 15px;
+            border: 1px solid #d1d1d6;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.3);
+        }
+
+        .contact-form .cta {
+            width: 100%;
+            padding: 18px;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: var(--light-gray);
+            color: var(--text-secondary);
+            padding: 50px 0;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* === RESPONSIVE ADJUSTMENTS === */
+        @media (max-width: 768px) {
+            section { padding: 60px 0; }
+            .section-header h2 { font-size: 2rem; }
+            .section-header p { font-size: 1rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
+            .feature-image { height: 50vh; border-radius: 20px; }
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>PTB Manufacturing</h1>
+        <div class="container">
+            <div class="logo">PTB Manufacturing</div>
+        </div>
     </header>
 
-    <section class="offer">
-        <div class="offer-content">
-            <small style="color: #8B4513; font-weight: bold;">Limited Offer</small>
-            <h2>The Simplest Way To Develop & Manufacture Beauty & Personal Care Products in Australia</h2>
-            <p>PTB Manufacturing is Australia's premier platform for beauty and personal care product manufacturing. Develop, manufacture, and launch your next iconic product with our expert team.</p>
-            <a href="mailto:info@ptbmanufacturing.com?subject=Free Consultation Request&body=Please tell us about your project:" class="cta">Book A Free Consultation Now</a>
-        </div>
-        <div class="testimonial">
-            <img src="https://media.istockphoto.com/id/1481971683/photo/portrait-of-businesswoman-in-office.jpg?s=612x612&w=0&k=20&c=7hlP5V9y4iHxGm37o2vOpB0vvu4OzD4xB71c5Q0Vv4A=" alt="Businesswoman testimonial for Australian beauty manufacturing">
-            <div class="stars">★★★★★</div>
-            <p>"I was looking for 4 months for a manufacturer that could do exactly what I needed. PTB moved mountains and has helped me put my vision into a reality that nobody else could."</p>
-            <cite>— Louis | CEO @ Eden Ancient Infusions</cite>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Beauty & Personal Care, Forged by Science.</h1>
+                <p>We are Australia's premier partner for brands seeking to develop, formulate, and manufacture cutting-edge cosmetic and personal care products.</p>
+                <a href="#contact" class="cta">Start Your Project</a>
+            </div>
+        </section>
 
-    <section class="hero">
-        <h1>Beauty & Personal Care, Forged by Science in Australia</h1>
-        <p>Our Australian team of world-class scientists and chemists crafts cutting-edge formulations to bring your beauty and personal care vision to life.</p>
-    </section>
+        <section class="feature-image-section">
+            
+            <img src="https://images.unsplash.com/photo-1580856943823-747d4e5175b2?q=80&w=2940&auto=format&fit=crop" alt="Clean and modern laboratory for beauty product formulation" class="feature-image">
+        </section>
 
-    <section id="science">
-        <h2>Powered by Australian Science & Manufacturing</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.2em;">At PTB Manufacturing, innovation starts in our state-of-the-art Australian labs. Our scientists use molecular engineering and clinical-grade testing to develop beauty and personal care formulas that deliver transformative results—safe, effective, and compliant with Australian standards.</p>
-        <img src="https://media.istockphoto.com/id/1347227608/photo/portrait-of-a-female-researcher-in-the-lab.jpg?s=612x612&w=0&k=20&c=0jY5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z=" alt="Female researcher in Australian beauty product lab" style="width: 100%; border-radius: 20px; margin-bottom: 40px;">
-        <ul style="list-style: none; padding: 0; text-align: center; font-size: 1.1em;">
-            <li>✓ Advanced Molecular Formulations for Beauty Products</li>
-            <li>✓ Rigorous Stability Testing for Personal Care</li>
-            <li>✓ Sustainable, High-Efficacy Ingredients Sourced in Australia</li>
-        </ul>
-    </section>
+        <section id="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Integrated Process</h2>
+                    <p>From a simple idea to a market-ready product, our end-to-end process ensures quality, compliance, and innovation at every step.</p>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="icon"><i class="fas fa-flask"></i></div>
+                        <h3>1. Formulation & Concept</h3>
+                        <p>Our expert chemists collaborate with you to engineer unique formulas, blending scientific innovation with your brand's vision.</p>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon"><i class="fas fa-box-open"></i></div>
+                        <h3>2. Prototyping & Testing</h3>
+                        <p>We create and refine high-fidelity prototypes in our Australian labs, conducting rigorous stability and efficacy testing.</p>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon"><i class="fas fa-industry"></i></div>
+                        <h3>3. Manufacturing & Scale</h3>
+                        <p>Leverage our state-of-the-art facilities for seamless production, from small batches to large-scale manufacturing runs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="process" style="background: #F5F5F5;">
-        <h2>The Australian Manufacturing Process</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="https://media.istockphoto.com/id/1372498455/photo/scientist-pipetting-sample-in-petri-dish-for-study-in-microbiology-laboratory.jpg?s=612x612&w=0&k=20&c=0jY5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z=" alt="Scientist pipetting in Australian beauty formulation lab">
-                <h3>Formulation & Concept</h3>
-                <p>Our Australian scientists engineer unique beauty and personal care formulas, blending local innovation with your brand vision.</p>
+        <section class="testimonials">
+            <div class="container">
+                 <div class="section-header">
+                    <h2>Trusted by Innovators</h2>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I was looking for a manufacturer that could do exactly what I needed. PTB moved mountains and helped me put my vision into a reality that nobody else could."</p>
+                    <cite>— Louis, CEO @ Eden Ancient Infusions</cite>
+                </div>
             </div>
-            <div class="step">
-                <img src="https://media.istockphoto.com/id/1185087994/photo/cosmetic-research.jpg?s=612x612&w=0&k=20&c=0jY5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z=" alt="Cosmetic research lab setup for personal care products in Australia">
-                <h3>Packaging & Design</h3>
-                <p>Precision-engineered packaging compliant with Australian regulations, designed for elegance and sustainability.</p>
-            </div>
-            <div class="step">
-                <img src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw46096c1e/images/beauty/Skincare/Autre/Research/recherche-4-946x533.jpg" alt="Beauty product prototyping in Australian manufacturing facility">
-                <h3>Prototyping & Testing</h3>
-                <p>Iterative prototypes tested in our Australian labs to ensure peak performance and TGA compliance.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="solutions">
-        <h2>Beauty & Personal Care Manufacturing Solutions in Australia</h2>
-        <div class="solutions">
-            <div class="solution">
-                <i class="fas fa-flask" style="font-size: 3em; color: #FFD700; margin-bottom: 20px;"></i>
-                <h3>Product Design & Formulation</h3>
-                <p>Leverage our Australian experts for custom beauty and personal care formulas that innovate locally.</p>
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ready to Create?</h2>
+                    <p>Let's build the next iconic beauty product together. Reach out to our team for a complimentary consultation about your project.</p>
+                </div>
+                <form class="contact-form" action="YOUR_FORM_HANDLER_URL" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Tell us about your beauty & personal care vision..." rows="6" required></textarea>
+                    <button type="submit" class="cta">Submit Inquiry</button>
+                </form>
             </div>
-            <div class="solution">
-                <i class="fas fa-cogs" style="font-size: 3em; color: #FFD700; margin-bottom: 20px;"></i>
-                <h3>Custom Prototyping</h3>
-                <p>High-fidelity prototypes manufactured in our Australian facilities with precision and speed.</p>
-            </div>
-            <div class="solution">
-                <i class="fas fa-box-open" style="font-size: 3em; color: #FFD700; margin-bottom: 20px;"></i>
-                <h3>Packaging & Branding</h3>
-                <p>Sustainable, compliant packaging designs tailored for the Australian beauty market.</p>
-            </div>
-            <div class="solution">
-                <i class="fas fa-chart-line" style="font-size: 3em; color: #FFD700; margin-bottom: 20px;"></i>
-                <h3>Brand Strategy & Consulting</h3>
-                <p>Data-driven strategies to scale your beauty and personal care brand in Australia.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2 style="color: #FFD700;">What Australian Innovators Say</h2>
-        <div class="testimonial">
-            <p>“PTB's Australian scientists turned our concept into a game-changing beauty formula. Unmatched local expertise.”</p>
-            <cite>— Sophia Lee, Founder @ Lumina Glow Essentials</cite>
-        </div>
-        <div class="testimonial">
-            <p>“Precision manufacturing and innovation at every step. Our personal care prototypes exceeded expectations.”</p>
-            <cite>— Dr. Elena Vasquez, Radiant Formulations Consulting</cite>
-        </div>
-        <div class="testimonial">
-            <p>“A true partner in beauty and personal care—reliable, cutting-edge, and transformative.”</p>
-            <cite>— Marcus Hale, Eternal Bloom Cosmetics</cite>
-        </div>
-    </section>
-
-    <section id="contact" style="background: #FFFFFF; text-align: center;">
-        <h2>Ready to Manufacture in Australia?</h2>
-        <p>Contact us at <a href="mailto:info@ptbmanufacturing.com">info@ptbmanufacturing.com</a> or use the form below.</p>
-        <a href="mailto:info@ptbmanufacturing.com?subject=Free Consultation Request&body=Please tell us about your project:" class="cta">Book a Free Consultation</a>
-        <form style="max-width: 600px; margin: 40px auto;">
-            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #1A1A1A; border-radius: 10px;">
-            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #1A1A1A; border-radius: 10px;">
-            <input type="file" name="attachment" multiple style="width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #1A1A1A; border-radius: 10px;">
-            <textarea placeholder="Your Beauty & Personal Care Vision..." rows="6" style="width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #1A1A1A; border-radius: 10px;"></textarea>
-            <button type="submit" class="cta" style="width: 100%; background: #1A1A1A; color: #FFFFFF; border: none;">Submit</button>
-        </form>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 PTB Manufacturing. All rights reserved. | Australian Beauty & Personal Care Product Manufacturers | Contact: <a href="mailto:info@ptbmanufacturing.com">info@ptbmanufacturing.com</a></p>
+        <div class="container">
+            <p>&copy; 2025 PTB Manufacturing. All rights reserved.</p>
+            <p><a href="mailto:info@ptbmanufacturing.com">info@ptbmanufacturing.com</a></p>
+        </div>
     </footer>
+
 </body>
 </html>
